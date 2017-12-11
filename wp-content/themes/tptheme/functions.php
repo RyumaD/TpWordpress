@@ -79,6 +79,31 @@ if ( ! function_exists( 'tptheme_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		add_action('init', 'create_slider');
+		function create_slider() {
+		  $slider_args = array(
+			 'labels' => array(
+			  'name' => __( 'Slider' ),
+			  'singular_name' => __( 'Slider' ),
+			  'add_new' => __( 'Add New Slider' ),
+			  'add_new_item' => __( 'Add New Slider' ),
+			  'edit_item' => __( 'Edit Slider' ),
+			  'new_item' => __( 'Add New Slider' ),
+			  'view_item' => __( 'View Slider' ),
+			  'search_items' => __( 'Search Slider' ),
+			  'not_found' => __( 'No slider project found' ),
+			  'not_found_in_trash' => __( 'No slider project found in trash' )
+							  ),
+							'public' => true,
+							'show_ui' => true,
+							'capability_type' => 'post',
+							'hierarchical' => false,
+							'rewrite' => true,
+							'menu_position' => 20,
+							'supports' => array('title', 'thumbnail')
+						  );
+					   register_post_type('slider',$slider_args);
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'tptheme_setup' );

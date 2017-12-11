@@ -1,11 +1,10 @@
 <?php 
 /*
-    Template Name: accueil template
+    Template Name: random
 */
 
-get_header();
-?>
-
+get_header(); 
+        ?>
     <div id="accueil-page">
 
             <?php

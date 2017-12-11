@@ -851,3 +851,99 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#cate div{
+	width: 25%;
+}
+.right-side {
+	width: 20%;
+	background-color: gainsboro;
+    border: 1px solid black;
+}
+.left-side {
+    width: 70%;
+}
+.content-post{
+	width: 30%;
+	background-color: crimson;
+	color: white;
+	text-align: center;
+}
+#slider{
+    width:980px;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    margin-bottom:10px;
+    color: #999;
+}
+
+#slider h2 a {
+    color:#999;
+    font-family:"Courier New", Courier, monospace;
+    text-decoration:none;    
+}
+
+#slider h2 a:hover {
+    color:#fff;
+    font-family:"Courier New", Courier, monospace;
+    text-decoration:none;    
+}
+
+#slider-window{
+    position:relative;
+    width:980px;
+    height:200px;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+#prevSlide,#nextSlide{
+    z-index:2;
+    width:30px;
+    height:200px;
+    position:absolute;
+    top:0;
+    cursor:pointer;
+}
+#prevSlide{left:0;background:url(images/previous.png)}
+#nextSlide{right:0;background:url(images/next.png)}
+
+.slide{
+    float:left;
+    position:relative;
+    list-style-type:none;
+    width:980px;
+    height:200px;
+}
+
+.slide-content{
+    z-index:1;
+    position:absolute;
+    left:30px;
+    top:0;
+    background:rgba(0,0,0,0.5);
+    height:180px;
+    width:300px;
+    padding:10px;
+}
+
+#slides{ display:inline-block;margin:0;padding:0;z-index:3; }
+
+.cath2{
+	text-align:center;
+	background-color: black;
+}
+.cath1{
+	text-align: center;
+	background-color: black;
+	color: whitesmoke;
+}
+.contenu{
+	background-color: blueviolet;
+}
